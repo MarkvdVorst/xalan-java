@@ -94,9 +94,6 @@ public class PrintTraceListener implements TraceListenerEx3 {
         switch (ev.m_styleNode.getXSLToken()) {
             case Constants.ELEMNAME_TEXTLITERALRESULT:
                 if (m_traceElements) {
-//                    m_pw.print(ev.m_styleNode.getSystemId() + " Line #" + ev.m_styleNode.getLineNumber() + ", "
-//                            + "Column #" + ev.m_styleNode.getColumnNumber() + " -- "
-//                            + ev.m_styleNode.getNodeName() + ": ");
 
                     //changed to just file name. reading the whole systemid everytime is hard to read
                     String systemId = ev.m_styleNode.getSystemId();
@@ -105,6 +102,8 @@ public class PrintTraceListener implements TraceListenerEx3 {
                         m_pw.println(file.getName() + " Line #" + ev.m_styleNode.getLineNumber() + ", "
                                 + "Column #" + ev.m_styleNode.getColumnNumber() + " -- "
                                 + ev.m_styleNode.getNodeName() + ": ");
+                    }else{
+                        m_pw.println("null");
                     }
 
                     ElemTextLiteral etl = (ElemTextLiteral) ev.m_styleNode;
@@ -127,9 +126,9 @@ public class PrintTraceListener implements TraceListenerEx3 {
                         File file = new File(systemId);
                         m_pw.println(file.getName() + " Line #" + et.getLineNumber() + ", " + "Column #"
                                 + et.getColumnNumber() + ": " + et.getNodeName() + " ");
+                    }else{
+                        m_pw.println("null");
                     }
-//                    m_pw.print(et.getSystemId() + " Line #" + et.getLineNumber() + ", " + "Column #"
-//                            + et.getColumnNumber() + ": " + et.getNodeName() + " ");
 
                     if (null != et.getMatch()) {
                         m_pw.print("match='" + et.getMatch().getPatternString() + "' ");
@@ -151,10 +150,9 @@ public class PrintTraceListener implements TraceListenerEx3 {
                         m_pw.println(file.getName() + " Line #" + ev.m_styleNode.getLineNumber() + ", "
                                 + "Column #" + ev.m_styleNode.getColumnNumber() + ": "
                                 + ev.m_styleNode.getNodeName());
+                    }else{
+                        m_pw.println("null");
                     }
-//                    m_pw.println(ev.m_styleNode.getSystemId() + " Line #" + ev.m_styleNode.getLineNumber() + ", "
-//                            + "Column #" + ev.m_styleNode.getColumnNumber() + ": "
-//                            + ev.m_styleNode.getNodeName());
                 }
         }
     }
