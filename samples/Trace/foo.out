@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><html xmlns="http://www.w3.org/TR/REC-html40">
+<a>
+<b/>
+</a>
+<body>
+<table>
+<tr>
+<td> </td>
+<th>fri</th>
+<th>mon</th>
+<th>sat</th>
+<th>thu</th>
+<th>tue</th>
+<th>wed</th>
+</tr>
+<tr>
+<td>Belt</td>
+<td>0 .
+            </td>
+<td>0 .
+            </td>
+<td>0 .
+            </td>
+<td>0 .
+            </td>
+<td>5.54 .
+            </td>
+<td>0 .
+            </td>
+<td>5.54 .
+           </td>
+</tr>
+<tr>
+<td>Boots</td>
+<td>0 .
+            </td>
+<td>0 .
+            </td>
+<td>0 .
+            </td>
+<td>9.23 .
+            </td>
+<td>0 .
+            </td>
+<td>0 .
+            </td>
+<td>9.23 .
+           </td>
+</tr>
+<tr>
+<td>Jacket</td>
+<td>0 .
+            </td>
+<td>0 .
+            </td>
+<td>9.84 .
+            </td>
+<td>0 .
+            </td>
+<td>0 .
+            </td>
+<td>0 .
+            </td>
+<td>9.84 .
+           </td>
+</tr>
+<tr>
+<td>Overalls</td>
+<td>0 .
+            </td>
+<td>0 .
+            </td>
+<td>0 .
+            </td>
+<td>3.16 .
+            </td>
+<td>0 .
+            </td>
+<td>0 .
+            </td>
+<td>3.16 .
+           </td>
+</tr>
+<tr>
+<td>Tie</td>
+<td>0 .
+            </td>
+<td>5.37 .
+            </td>
+<td>0 .
+            </td>
+<td>0 .
+            </td>
+<td>0 .
+            </td>
+<td>0 .
+            </td>
+<td>5.37 .
+           </td>
+</tr>
+<tr>
+<td> </td>
+<td>0</td>
+<td>5.37</td>
+<td>9.84</td>
+<td>12.39</td>
+<td>5.54</td>
+<td>0</td>
+<td>33.14</td>
+</tr>
+</table>
+</body>
+</html>

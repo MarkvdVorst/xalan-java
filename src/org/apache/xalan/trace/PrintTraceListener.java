@@ -102,7 +102,7 @@ public class PrintTraceListener implements TraceListenerEx3 {
                         m_pw.println(file.getName() + " Line #" + ev.m_styleNode.getLineNumber() + ", "
                                 + "Column #" + ev.m_styleNode.getColumnNumber() + " -- "
                                 + ev.m_styleNode.getNodeName() + ": ");
-                    }else{
+                    } else {
                         m_pw.println("null");
                     }
 
@@ -126,7 +126,7 @@ public class PrintTraceListener implements TraceListenerEx3 {
                         File file = new File(systemId);
                         m_pw.println(file.getName() + " Line #" + et.getLineNumber() + ", " + "Column #"
                                 + et.getColumnNumber() + ": " + et.getNodeName() + " ");
-                    }else{
+                    } else {
                         m_pw.println("null");
                     }
 
@@ -150,7 +150,7 @@ public class PrintTraceListener implements TraceListenerEx3 {
                         m_pw.println(file.getName() + " Line #" + ev.m_styleNode.getLineNumber() + ", "
                                 + "Column #" + ev.m_styleNode.getColumnNumber() + ": "
                                 + ev.m_styleNode.getNodeName());
-                    }else{
+                    } else {
                         m_pw.println("null");
                     }
                 }

@@ -1,0 +1,891 @@
+--------------------------------------------New template being applied--------------------------------------------
+Now using: file:///D:/hr_stuff/Jaar_3_2023-2024/Stage/ladybug/xalan-java/samples/Trace/foo.xsl
+foo.xsl Line #36, Column #25: template 
+match='/' 
+foo.xsl Line #37, Column #32: variable
+STARTDOCUMENT
+foo.xsl Line #37, Column #35: a
+STARTELEMENT: a
+foo.xsl Line #37, Column #39: b
+STARTELEMENT: b
+ENDELEMENT: b
+ENDELEMENT: a
+ENDDOCUMENT
+STARTDOCUMENT
+foo.xsl Line #38, Column #9: html
+foo.xsl Line #39, Column #37: copy-of
+Selected source node '#document', at foo.xml
+foo.xsl Line #39, Column #37: copy-of, select='$my-test': 
+STARTELEMENT: html
+STARTELEMENT: a
+STARTELEMENT: b
+ENDELEMENT: b
+ENDELEMENT: a
+foo.xsl Line #40, Column #11: body
+STARTELEMENT: body
+foo.xsl Line #41, Column #12: table
+STARTELEMENT: table
+foo.xsl Line #42, Column #11: tr
+STARTELEMENT: tr
+foo.xsl Line #43, Column #13: td
+STARTELEMENT: td
+foo.xsl Line #43, Column #35 -- #Text: 
+    
+CHARACTERS:  
+ENDELEMENT: td
+foo.xsl Line #44, Column #42: for-each
+Selected source node '#document', at foo.xml
+foo.xsl Line #30, Column #46: variable, select='//dow[not(.=following::dow)]': 
+     10030: dow
+     1003c: dow
+     1004e: dow
+     10063: dow
+     10069: dow
+     10072: dow
+null
+Selected source node '#document', at foo.xml
+foo.xsl Line #44, Column #42: for-each, select='$day-list': 
+     10030: dow
+     1003c: dow
+     1004e: dow
+     10063: dow
+     10069: dow
+     10072: dow
+foo.xsl Line #44, Column #42: for-each
+foo.xsl Line #46, Column #15: th
+foo.xsl Line #46, Column #41: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #46, Column #41: value-of, select='.': 
+     10030: dow
+STARTELEMENT: th
+CHARACTERS: fri
+ENDELEMENT: th
+foo.xsl Line #44, Column #42: for-each
+foo.xsl Line #46, Column #15: th
+foo.xsl Line #46, Column #41: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #46, Column #41: value-of, select='.': 
+     1004e: dow
+STARTELEMENT: th
+CHARACTERS: mon
+ENDELEMENT: th
+foo.xsl Line #44, Column #42: for-each
+foo.xsl Line #46, Column #15: th
+foo.xsl Line #46, Column #41: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #46, Column #41: value-of, select='.': 
+     1003c: dow
+STARTELEMENT: th
+CHARACTERS: sat
+ENDELEMENT: th
+foo.xsl Line #44, Column #42: for-each
+foo.xsl Line #46, Column #15: th
+foo.xsl Line #46, Column #41: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #46, Column #41: value-of, select='.': 
+     10072: dow
+STARTELEMENT: th
+CHARACTERS: thu
+ENDELEMENT: th
+foo.xsl Line #44, Column #42: for-each
+foo.xsl Line #46, Column #15: th
+foo.xsl Line #46, Column #41: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #46, Column #41: value-of, select='.': 
+     10063: dow
+STARTELEMENT: th
+CHARACTERS: tue
+ENDELEMENT: th
+foo.xsl Line #44, Column #42: for-each
+foo.xsl Line #46, Column #15: th
+foo.xsl Line #46, Column #41: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #46, Column #41: value-of, select='.': 
+     10069: dow
+STARTELEMENT: th
+CHARACTERS: wed
+ENDELEMENT: th
+ENDELEMENT: tr
+foo.xsl Line #49, Column #44: for-each
+Selected source node '#document', at foo.xml
+foo.xsl Line #33, Column #61: variable, select='//product[not(.=following::product)]': 
+     1000d: product
+     10025: product
+     10043: product
+     10058: product
+     10079: product
+null
+Selected source node '#document', at foo.xml
+foo.xsl Line #49, Column #44: for-each, select='$product-list': 
+     1000d: product
+     10025: product
+     10043: product
+     10058: product
+     10079: product
+foo.xsl Line #49, Column #44: for-each
+foo.xsl Line #51, Column #51: variable
+Selected source node 'product', at foo.xml
+foo.xsl Line #51, Column #51: variable, select='.': 
+     1000d: product
+foo.xsl Line #52, Column #13: tr
+STARTELEMENT: tr
+foo.xsl Line #53, Column #15: td
+foo.xsl Line #54, Column #47: value-of
+Selected source node 'product', at foo.xml
+foo.xsl Line #54, Column #47: value-of, select='$product': 
+     1000d: product
+STARTELEMENT: td
+CHARACTERS: Belt
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+null
+Selected source node 'product', at foo.xml
+foo.xsl Line #56, Column #44: for-each, select='$day-list': 
+     10030: dow
+     1003c: dow
+     1004e: dow
+     10063: dow
+     10069: dow
+     10072: dow
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10030: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     1004e: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     1003c: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10072: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10063: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 5.54
+STARTELEMENT: td
+CHARACTERS: 5.54
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10069: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #65, Column #15: td
+foo.xsl Line #67, Column #60: value-of
+Selected source node 'product', at foo.xml
+foo.xsl Line #67, Column #60: value-of, select='sum(//price[../product=$product])': 5.54
+STARTELEMENT: td
+CHARACTERS: 5.54
+foo.xsl Line #68, Column #17 -- #Text: 
+    .
+CHARACTERS:  .
+           
+ENDELEMENT: td
+ENDELEMENT: tr
+foo.xsl Line #49, Column #44: for-each
+foo.xsl Line #51, Column #51: variable
+Selected source node 'product', at foo.xml
+foo.xsl Line #51, Column #51: variable, select='.': 
+     10025: product
+foo.xsl Line #52, Column #13: tr
+STARTELEMENT: tr
+foo.xsl Line #53, Column #15: td
+foo.xsl Line #54, Column #47: value-of
+Selected source node 'product', at foo.xml
+foo.xsl Line #54, Column #47: value-of, select='$product': 
+     10025: product
+STARTELEMENT: td
+CHARACTERS: Boots
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+null
+Selected source node 'product', at foo.xml
+foo.xsl Line #56, Column #44: for-each, select='$day-list': 
+     10030: dow
+     1003c: dow
+     1004e: dow
+     10063: dow
+     10069: dow
+     10072: dow
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10030: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     1004e: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     1003c: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10072: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 9.23
+STARTELEMENT: td
+CHARACTERS: 9.23
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10063: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10069: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #65, Column #15: td
+foo.xsl Line #67, Column #60: value-of
+Selected source node 'product', at foo.xml
+foo.xsl Line #67, Column #60: value-of, select='sum(//price[../product=$product])': 9.23
+STARTELEMENT: td
+CHARACTERS: 9.23
+foo.xsl Line #68, Column #17 -- #Text: 
+    .
+CHARACTERS:  .
+           
+ENDELEMENT: td
+ENDELEMENT: tr
+foo.xsl Line #49, Column #44: for-each
+foo.xsl Line #51, Column #51: variable
+Selected source node 'product', at foo.xml
+foo.xsl Line #51, Column #51: variable, select='.': 
+     10043: product
+foo.xsl Line #52, Column #13: tr
+STARTELEMENT: tr
+foo.xsl Line #53, Column #15: td
+foo.xsl Line #54, Column #47: value-of
+Selected source node 'product', at foo.xml
+foo.xsl Line #54, Column #47: value-of, select='$product': 
+     10043: product
+STARTELEMENT: td
+CHARACTERS: Jacket
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+null
+Selected source node 'product', at foo.xml
+foo.xsl Line #56, Column #44: for-each, select='$day-list': 
+     10030: dow
+     1003c: dow
+     1004e: dow
+     10063: dow
+     10069: dow
+     10072: dow
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10030: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     1004e: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     1003c: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 9.84
+STARTELEMENT: td
+CHARACTERS: 9.84
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10072: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10063: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10069: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #65, Column #15: td
+foo.xsl Line #67, Column #60: value-of
+Selected source node 'product', at foo.xml
+foo.xsl Line #67, Column #60: value-of, select='sum(//price[../product=$product])': 9.84
+STARTELEMENT: td
+CHARACTERS: 9.84
+foo.xsl Line #68, Column #17 -- #Text: 
+    .
+CHARACTERS:  .
+           
+ENDELEMENT: td
+ENDELEMENT: tr
+foo.xsl Line #49, Column #44: for-each
+foo.xsl Line #51, Column #51: variable
+Selected source node 'product', at foo.xml
+foo.xsl Line #51, Column #51: variable, select='.': 
+     10079: product
+foo.xsl Line #52, Column #13: tr
+STARTELEMENT: tr
+foo.xsl Line #53, Column #15: td
+foo.xsl Line #54, Column #47: value-of
+Selected source node 'product', at foo.xml
+foo.xsl Line #54, Column #47: value-of, select='$product': 
+     10079: product
+STARTELEMENT: td
+CHARACTERS: Overalls
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+null
+Selected source node 'product', at foo.xml
+foo.xsl Line #56, Column #44: for-each, select='$day-list': 
+     10030: dow
+     1003c: dow
+     1004e: dow
+     10063: dow
+     10069: dow
+     10072: dow
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10030: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     1004e: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     1003c: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10072: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 3.16
+STARTELEMENT: td
+CHARACTERS: 3.16
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10063: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10069: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #65, Column #15: td
+foo.xsl Line #67, Column #60: value-of
+Selected source node 'product', at foo.xml
+foo.xsl Line #67, Column #60: value-of, select='sum(//price[../product=$product])': 3.16
+STARTELEMENT: td
+CHARACTERS: 3.16
+foo.xsl Line #68, Column #17 -- #Text: 
+    .
+CHARACTERS:  .
+           
+ENDELEMENT: td
+ENDELEMENT: tr
+foo.xsl Line #49, Column #44: for-each
+foo.xsl Line #51, Column #51: variable
+Selected source node 'product', at foo.xml
+foo.xsl Line #51, Column #51: variable, select='.': 
+     10058: product
+foo.xsl Line #52, Column #13: tr
+STARTELEMENT: tr
+foo.xsl Line #53, Column #15: td
+foo.xsl Line #54, Column #47: value-of
+Selected source node 'product', at foo.xml
+foo.xsl Line #54, Column #47: value-of, select='$product': 
+     10058: product
+STARTELEMENT: td
+CHARACTERS: Tie
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+null
+Selected source node 'product', at foo.xml
+foo.xsl Line #56, Column #44: for-each, select='$day-list': 
+     10030: dow
+     1003c: dow
+     1004e: dow
+     10063: dow
+     10069: dow
+     10072: dow
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10030: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     1004e: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 5.37
+STARTELEMENT: td
+CHARACTERS: 5.37
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     1003c: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10072: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10063: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #56, Column #44: for-each
+foo.xsl Line #58, Column #51: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #58, Column #51: variable, select='.': 
+     10069: dow
+foo.xsl Line #59, Column #17: td
+foo.xsl Line #62, Column #3: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #62, Column #3: value-of, select='sum(//price[../product=$product][../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+foo.xsl Line #63, Column #18 -- #Text: 
+    .
+CHARACTERS:  .
+            
+ENDELEMENT: td
+foo.xsl Line #65, Column #15: td
+foo.xsl Line #67, Column #60: value-of
+Selected source node 'product', at foo.xml
+foo.xsl Line #67, Column #60: value-of, select='sum(//price[../product=$product])': 5.37
+STARTELEMENT: td
+CHARACTERS: 5.37
+foo.xsl Line #68, Column #17 -- #Text: 
+    .
+CHARACTERS:  .
+           
+ENDELEMENT: td
+ENDELEMENT: tr
+foo.xsl Line #71, Column #11: tr
+STARTELEMENT: tr
+foo.xsl Line #72, Column #13: td
+STARTELEMENT: td
+foo.xsl Line #72, Column #35 -- #Text: 
+    
+CHARACTERS:  
+ENDELEMENT: td
+foo.xsl Line #73, Column #42: for-each
+null
+Selected source node '#document', at foo.xml
+foo.xsl Line #73, Column #42: for-each, select='$day-list': 
+     10030: dow
+     1003c: dow
+     1004e: dow
+     10063: dow
+     10069: dow
+     10072: dow
+foo.xsl Line #73, Column #42: for-each
+foo.xsl Line #75, Column #49: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #75, Column #49: variable, select='.': 
+     10030: dow
+foo.xsl Line #76, Column #15: td
+foo.xsl Line #78, Column #58: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #78, Column #58: value-of, select='sum(//price[../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+ENDELEMENT: td
+foo.xsl Line #73, Column #42: for-each
+foo.xsl Line #75, Column #49: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #75, Column #49: variable, select='.': 
+     1004e: dow
+foo.xsl Line #76, Column #15: td
+foo.xsl Line #78, Column #58: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #78, Column #58: value-of, select='sum(//price[../../../dow=$day])': 5.37
+STARTELEMENT: td
+CHARACTERS: 5.37
+ENDELEMENT: td
+foo.xsl Line #73, Column #42: for-each
+foo.xsl Line #75, Column #49: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #75, Column #49: variable, select='.': 
+     1003c: dow
+foo.xsl Line #76, Column #15: td
+foo.xsl Line #78, Column #58: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #78, Column #58: value-of, select='sum(//price[../../../dow=$day])': 9.84
+STARTELEMENT: td
+CHARACTERS: 9.84
+ENDELEMENT: td
+foo.xsl Line #73, Column #42: for-each
+foo.xsl Line #75, Column #49: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #75, Column #49: variable, select='.': 
+     10072: dow
+foo.xsl Line #76, Column #15: td
+foo.xsl Line #78, Column #58: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #78, Column #58: value-of, select='sum(//price[../../../dow=$day])': 12.39
+STARTELEMENT: td
+CHARACTERS: 12.39
+ENDELEMENT: td
+foo.xsl Line #73, Column #42: for-each
+foo.xsl Line #75, Column #49: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #75, Column #49: variable, select='.': 
+     10063: dow
+foo.xsl Line #76, Column #15: td
+foo.xsl Line #78, Column #58: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #78, Column #58: value-of, select='sum(//price[../../../dow=$day])': 5.54
+STARTELEMENT: td
+CHARACTERS: 5.54
+ENDELEMENT: td
+foo.xsl Line #73, Column #42: for-each
+foo.xsl Line #75, Column #49: variable
+Selected source node 'dow', at foo.xml
+foo.xsl Line #75, Column #49: variable, select='.': 
+     10069: dow
+foo.xsl Line #76, Column #15: td
+foo.xsl Line #78, Column #58: value-of
+Selected source node 'dow', at foo.xml
+foo.xsl Line #78, Column #58: value-of, select='sum(//price[../../../dow=$day])': 0
+STARTELEMENT: td
+CHARACTERS: 0
+ENDELEMENT: td
+foo.xsl Line #81, Column #13: td
+foo.xsl Line #82, Column #49: value-of
+Selected source node '#document', at foo.xml
+foo.xsl Line #82, Column #49: value-of, select='sum(//price)': 33.14
+STARTELEMENT: td
+CHARACTERS: 33.14
+ENDELEMENT: td
+ENDELEMENT: tr
+ENDELEMENT: table
+ENDELEMENT: body
+ENDELEMENT: html
+ENDDOCUMENT

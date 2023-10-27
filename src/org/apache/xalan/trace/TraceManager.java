@@ -21,6 +21,7 @@
 package org.apache.xalan.trace;
 
 import java.lang.reflect.Method;
+import java.util.Stack;
 import java.util.TooManyListenersException;
 import java.util.Vector;
 
