@@ -12,11 +12,11 @@ import org.w3c.dom.Node;
 import javax.xml.transform.SourceLocator;
 import javax.xml.transform.TransformerException;
 import java.io.File;
-import java.util.Stack;
+import java.util.List;
 
 public class TemplateTraceListener implements TraceListener {
 
-    Stack<TemplateTrace> m_templateTraceStack;
+    List<TemplateTrace> m_templateTraceList;
 
     /**
      * This needs to be set to true if the listener is to print an event whenever a template is invoked.
@@ -38,8 +38,8 @@ public class TemplateTraceListener implements TraceListener {
      */
     public boolean m_traceSelection = false;
 
-    public TemplateTraceListener(Stack<TemplateTrace> templateTraceStack) {
-        this.m_templateTraceStack = templateTraceStack;
+    public TemplateTraceListener(List<TemplateTrace> templateTraceStack) {
+        this.m_templateTraceList = templateTraceStack;
     }
 
     @Override
@@ -62,7 +62,7 @@ public class TemplateTraceListener implements TraceListener {
                     String chars = new String(etl.getChars(), 0, etl.getChars().length);
 
                     trace.append("\n").append("    ").append(chars.trim());
-                    m_templateTraceStack.peek().AddChildTrace(trace.toString());
+                    m_templateTraceList.get(m_templateTraceList.size() - 1).AddChildTrace(trace.toString());
                 }
                 break;
             case Constants.ELEMNAME_TEMPLATE:
@@ -91,7 +91,7 @@ public class TemplateTraceListener implements TraceListener {
                     }
 
                     trace.append("\n");
-                    m_templateTraceStack.push(new TemplateTrace(et.getSystemId(), trace.toString()));
+                    m_templateTraceList.add(new TemplateTrace(et.getSystemId(), trace.toString()));
                 }
                 break;
             default:
@@ -209,7 +209,7 @@ public class TemplateTraceListener implements TraceListener {
                 trace.append("\n").append(ev.m_selection.str());
             }
 
-            m_templateTraceStack.peek().AddChildTrace(trace.toString());
+            m_templateTraceList.get(m_templateTraceList.size() - 1).AddChildTrace(trace.toString());
         }
     }
 
@@ -255,7 +255,7 @@ public class TemplateTraceListener implements TraceListener {
                     trace.append("\n").append("IGNORABLEWHITESPACE");
                     break;
             }
-            m_templateTraceStack.peek().AddChildTrace(trace.toString());
+            m_templateTraceList.get(m_templateTraceList.size() - 1).AddChildTrace(trace.toString());
         }
     }
 }

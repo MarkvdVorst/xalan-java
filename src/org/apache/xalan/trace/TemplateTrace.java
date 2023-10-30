@@ -14,7 +14,7 @@ public class TemplateTrace {
         this._childrenTraces = new ArrayList<>();
     }
 
-    /**Gets the name of the template*/
+    /**Gets the systemId of the template*/
     public String GetTemplateName(){
         return _templateName;
     }
@@ -45,14 +45,16 @@ public class TemplateTrace {
     }
 
     /**Returns a string that holds the complete trace of the transform*/
-    public String GetWholeTrace(){
+    public String GetWholeTrace(boolean showSeperator){
         StringBuilder result = new StringBuilder();
 
-        result.append("--------------------------------------------New template being applied--------------------------------------------").append("\n");
-        result.append(_parentTrace).append("\n");
+        if(showSeperator) {
+            result.append("--------------------------------------------New template being applied--------------------------------------------");
+        }
+        result.append(_parentTrace);
 
         for (String childrenTrace : _childrenTraces) {
-            result.append(childrenTrace).append("\n");
+            result.append(childrenTrace);
         }
 
         return result.toString();
