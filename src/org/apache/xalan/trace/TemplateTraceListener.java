@@ -38,12 +38,8 @@ public class TemplateTraceListener implements TraceListener {
      */
     public boolean m_traceSelection = false;
 
-    /**
-     * Set to true if the listener is to print information after each extension event.
-     */
-    public boolean m_traceExtension = false;
-
-    public TemplateTraceListener() {
+    public TemplateTraceListener(Stack<TemplateTrace> templateTraceStack) {
+        this.m_templateTraceStack = templateTraceStack;
     }
 
     @Override
@@ -71,7 +67,6 @@ public class TemplateTraceListener implements TraceListener {
                 break;
             case Constants.ELEMNAME_TEMPLATE:
                 if (m_traceTemplates || m_traceElements) {
-                    trace.append("\n").append("--------------------------------------------New template being applied--------------------------------------------");
                     ElemTemplate et = (ElemTemplate) ev.m_styleNode;
 
                     //showing systemid once for file location

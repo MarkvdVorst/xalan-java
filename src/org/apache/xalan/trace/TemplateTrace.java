@@ -14,27 +14,47 @@ public class TemplateTrace {
         this._childrenTraces = new ArrayList<>();
     }
 
+    /**Gets the name of the template*/
     public String GetTemplateName(){
         return _templateName;
     }
 
+    /**Gets the entire first trace that mentions the template location and the match for it*/
     public String GetParentTrace() {
         return _parentTrace;
     }
 
+    /**This method adds a trace to the children traces of the parent template trace*/
     public void AddChildTrace(String childTrace) {
         _childrenTraces.add(childTrace);
     }
 
+    /**Get a child trace from a specific index*/
     public String GetChildTrace(int index) {
         return _childrenTraces.get(index);
     }
 
+    /**Returns all child traces that were added*/
     public List<String> GetAllChildTraces() {
         return _childrenTraces;
     }
 
+    /**Empties the child traces for this template trace*/
     public void Flush() {
         _childrenTraces = new ArrayList<>();
+    }
+
+    /**Returns a string that holds the complete trace of the transform*/
+    public String GetWholeTrace(){
+        StringBuilder result = new StringBuilder();
+
+        result.append("--------------------------------------------New template being applied--------------------------------------------").append("\n");
+        result.append(_parentTrace).append("\n");
+
+        for (String childrenTrace : _childrenTraces) {
+            result.append(childrenTrace).append("\n");
+        }
+
+        return result.toString();
     }
 }
